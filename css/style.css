@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+}
+
+button {
+  padding: 0 1em;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 18rem;
+}
+
+.card {
+  margin-top: 2em;
+  width: 300px;
+}
+
+.card img {
+  height: 225px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.toggle-button {
+  height: 80px;
+}
+
+footer svg {
+  margin-left: 0.25em;
+  width: 25px;
+}
+
+footer svg:hover {
+  animation: pulse 0.4s backwards;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+/* INTRO SECTION */
+.loading-container {
+  color: white;
+}
+
+.loading {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  transform-origin: bottom left;
+  animation: loading 1s;
+  animation-iteration-count: 4;
+}
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-out 0.5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+
+/* ANIMATIONS */
+
+@keyframes loading {
+  0% {
+    transform: scaleX(0);
+    offset: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    offset: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    margin-left: -250px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  form {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  form {
+    width: 50%;
+  }
+}
