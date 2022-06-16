@@ -9,8 +9,6 @@ let nav = document.querySelector(".navbar-light");
 let navbg = document.querySelector(".bg-light");
 let svgICONS = document.querySelectorAll(".svg-icon");
 
-//card functions
-
 //dark mode functions
 function removeLight() {
   nav.classList.remove("navbar-light");

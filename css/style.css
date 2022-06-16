@@ -12,11 +12,6 @@ body {
   padding: 0;
 }
 
-button {
-  padding: 0 1em;
-  border-radius: 50%;
-}
-
 .icon {
   width: 18rem;
   margin-top: 1em;
