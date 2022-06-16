@@ -8,6 +8,17 @@ let cards = document.querySelectorAll(".card");
 let nav = document.querySelector(".navbar-light");
 let navbg = document.querySelector(".bg-light");
 let svgICONS = document.querySelectorAll(".svg-icon");
+let skills = document.querySelector(".skills");
+
+//random color function
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 //dark mode functions
 function removeLight() {
@@ -105,3 +116,8 @@ function introEffect() {
 //event listeners
 buttonToggle.addEventListener("click", buttonChecker);
 window.addEventListener("DOMContentLoaded", introEffect);
+skills.addEventListener("click", (e) => {
+  if (e.target.hasAttribute("fill")) {
+    e.target.setAttribute("fill", getRandomColor());
+  }
+});
