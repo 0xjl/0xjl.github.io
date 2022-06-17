@@ -6,6 +6,7 @@
 
 body {
   max-width: 1440px;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -69,6 +70,7 @@ footer {
 
 .navbar-nav {
   margin-left: auto;
+  font-weight: 500;
 }
 
 .navbar-brand {

@@ -12,6 +12,7 @@ const skills = document.querySelector(".skills");
 const upBtn = document.getElementById("upBtn");
 const projects = document.querySelector(".projects");
 const footerText = document.querySelector(".card-footer");
+const badgeLight = document.querySelector(".badge-light");
 
 //up function
 function upFunction() {
