@@ -13,6 +13,7 @@ const upBtn = document.getElementById("upBtn");
 const projects = document.querySelector(".projects");
 const footerText = document.querySelector(".card-footer");
 const badgeLight = document.querySelector(".badge-light");
+const liveBadges = document.querySelectorAll(".badge-light");
 
 //up function
 function upFunction() {
@@ -35,24 +36,36 @@ function removeLight() {
   nav.classList.remove("navbar-light");
   navbg.classList.remove("bg-light");
   buttonToggle.classList.remove("btn-light");
+  for (let i = 0; i < liveBadges.length; i++) {
+    liveBadges[i].classList.remove("badge-light");
+  }
 }
 
 function addDark() {
   nav.classList.add("navbar-dark");
   navbg.classList.add("bg-dark");
   buttonToggle.classList.add("btn-dark");
+  for (let i = 0; i < liveBadges.length; i++) {
+    liveBadges[i].classList.add("badge-dark");
+  }
 }
 
 function addLight() {
   nav.classList.add("navbar-light");
   navbg.classList.add("bg-light");
   buttonToggle.classList.add("btn-light");
+  for (let i = 0; i < liveBadges.length; i++) {
+    liveBadges[i].classList.add("badge-light");
+  }
 }
 
 function removeDark() {
   nav.classList.remove("navbar-dark");
   navbg.classList.remove("bg-dark");
   buttonToggle.classList.remove("btn-dark");
+  for (let i = 0; i < liveBadges.length; i++) {
+    liveBadges[i].classList.remove("badge-dark");
+  }
 }
 
 function darkMode() {
