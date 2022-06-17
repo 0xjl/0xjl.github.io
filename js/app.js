@@ -2,13 +2,22 @@ const intro = document.querySelector(".intro");
 const logo = document.querySelector(".logo-header");
 const logoSpan = document.querySelectorAll(".logo");
 const loading = document.querySelector(".loading-container");
-let buttonToggle = document.getElementById("darkmode");
-let body = document.querySelector(".all");
-let cards = document.querySelectorAll(".card");
-let nav = document.querySelector(".navbar-light");
-let navbg = document.querySelector(".bg-light");
-let svgICONS = document.querySelectorAll(".svg-icon");
-let skills = document.querySelector(".skills");
+const buttonToggle = document.getElementById("darkmode");
+const body = document.querySelector(".all");
+const cards = document.querySelectorAll(".card");
+const nav = document.querySelector(".navbar-light");
+const navbg = document.querySelector(".bg-light");
+const svgICONS = document.querySelectorAll(".svg-icon");
+const skills = document.querySelector(".skills");
+const upBtn = document.getElementById("upBtn");
+const projects = document.querySelector(".projects");
+const footerText = document.querySelector(".card-footer");
+
+//up function
+function upFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 //random color function
 function getRandomColor() {
@@ -45,16 +54,6 @@ function removeDark() {
   buttonToggle.classList.remove("btn-dark");
 }
 
-function buttonChecker() {
-  if (buttonToggle.innerText === "Dark") {
-    buttonToggle.innerText = "Light";
-    darkMode();
-  } else if (buttonToggle.innerText === "Light") {
-    buttonToggle.innerText = "Dark";
-    lightMode();
-  }
-}
-
 function darkMode() {
   body.style.backgroundColor = "black";
   body.style.color = "white";
@@ -80,6 +79,17 @@ function lightMode() {
     cards[i].style.backgroundColor = "white";
   }
 }
+
+function buttonChecker() {
+  if (buttonToggle.innerText === "Dark") {
+    buttonToggle.innerText = "Light";
+    darkMode();
+  } else if (buttonToggle.innerText === "Light") {
+    buttonToggle.innerText = "Dark";
+    lightMode();
+  }
+}
+
 //intro functions
 function fadeText() {
   logoSpan.forEach((span, index) => {
@@ -114,6 +124,7 @@ function introEffect() {
 }
 
 //event listeners
+upBtn.addEventListener("click", upFunction);
 buttonToggle.addEventListener("click", buttonChecker);
 window.addEventListener("DOMContentLoaded", introEffect);
 skills.addEventListener("click", (e) => {
