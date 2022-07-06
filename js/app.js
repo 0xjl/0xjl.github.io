@@ -95,11 +95,11 @@ function lightMode() {
 }
 
 function buttonChecker() {
-  if (buttonToggle.innerText === "Dark") {
-    buttonToggle.innerText = "Light";
+  if (buttonToggle.innerText === "Dark Mode") {
+    buttonToggle.innerText = "Light Mode";
     darkMode();
-  } else if (buttonToggle.innerText === "Light") {
-    buttonToggle.innerText = "Dark";
+  } else if (buttonToggle.innerText === "Light Mode") {
+    buttonToggle.innerText = "Dark Mode";
     lightMode();
   }
 }

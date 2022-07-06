@@ -89,9 +89,9 @@ footer {
 /* INTRO SECTION */
 .loading-container {
   position: absolute;
-  width: 50%;
   right: 25%;
   bottom: 50%;
+  width: 50%;
   color: white;
 }
 
