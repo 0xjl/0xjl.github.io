@@ -129,12 +129,12 @@ function loadingScreen() {
       span.classList.add('active');
     }, index++ * 700);
   });
-  setTimeout(fadeText, 2700);
-  setTimeout(revealWebsite, 3000);
+  setTimeout(fadeText, 1750);
+  setTimeout(revealWebsite, 2050);
 }
 
 function introEffect() {
-  setTimeout(loadingScreen, 4000);
+  setTimeout(loadingScreen, 800);
 }
 
 //event listeners
