@@ -129,8 +129,8 @@ function loadingScreen() {
       span.classList.add('active');
     }, index++ * 700);
   });
-  setTimeout(fadeText, 1750);
-  setTimeout(revealWebsite, 2050);
+  setTimeout(fadeText, 750);
+  setTimeout(revealWebsite, 1250);
 }
 
 function introEffect() {
