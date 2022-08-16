@@ -77,7 +77,7 @@ function darkMode() {
     svgICONS[i].style.fill = 'white';
   }
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.backgroundColor = 'black';
+    cards[i].style.backgroundColor = 'lightslategray';
   }
 }
 
