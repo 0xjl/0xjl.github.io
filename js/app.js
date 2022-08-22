@@ -69,7 +69,7 @@ function removeDark() {
 }
 
 function darkMode() {
-  body.style.backgroundColor = 'black';
+  body.style.backgroundColor = '#343a40';
   body.style.color = 'white';
   removeLight();
   addDark();

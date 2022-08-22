@@ -55,6 +55,7 @@ footer {
 }
 
 .card-body {
+  height: 175px;
   display: flex;
   flex-direction: column;
   margin-top: auto;
