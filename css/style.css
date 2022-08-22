@@ -140,9 +140,12 @@ footer {
 
 /* FORM */
 
+.form-group {
+  text-align: left;
+}
+
 .form-group input,
 .form-group textarea {
-  margin: 0 auto;
   width: 100%;
   border: 3px solid black;
   border-radius: 7.5px;
@@ -185,15 +188,20 @@ footer {
 }
 
 /* MEDIA QUERIES */
-/* bootstrap takes care of the rest */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .contact {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media (min-width: 1024px) {
   .contact {
-    width: 30vw;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact {
+    width: 30%;
   }
 }

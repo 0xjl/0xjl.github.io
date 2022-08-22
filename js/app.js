@@ -131,12 +131,16 @@ function loadingScreen() {
       span.classList.add('active');
     }, index++ * 700);
   });
-  setTimeout(fadeText, 750);
+  setTimeout(fadeText, 1250);
   setTimeout(revealWebsite, 1250);
 }
 
 function introEffect() {
-  setTimeout(loadingScreen, 800);
+  setTimeout(loadingScreen, 2000);
+}
+
+function formSubmit() {
+  alert('The form was submitted');
 }
 
 //event listeners
