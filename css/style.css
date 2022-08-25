@@ -6,11 +6,23 @@
 
 body {
   max-width: 1440px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Serif', serif;
 }
 
 nav {
   font-size: 1.25em;
+}
+
+.btn-resume {
+  margin-top: 2em;
+  font-size: 2em;
+  color: rgb(70, 118, 70);
+  font-weight: bold;
+}
+
+.btn-resume:hover {
+  color: lightgreen;
+  border: 1px solid lightgreen;
 }
 
 footer svg {
@@ -31,6 +43,18 @@ footer {
   padding: 0;
 }
 
+h2 {
+  color: midnightblue;
+}
+
+.about-me {
+  color: #1748a5;
+  font-size: 1.2em;
+  line-height: 2.1;
+  margin-top: 2em;
+  font-weight: 500;
+}
+
 /* buttons */
 #upBtn {
   margin-left: 80%;
@@ -45,7 +69,6 @@ footer {
 }
 
 .card {
-  border: 2px solid rgb(68, 68, 68);
   margin-top: 2em;
   width: 300px;
 }

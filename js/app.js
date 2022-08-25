@@ -14,6 +14,9 @@ const projects = document.querySelector('.projects');
 const footerText = document.querySelector('.card-footer');
 const badgeLight = document.querySelector('.badge-light');
 const liveBadges = document.querySelectorAll('.badge-light');
+const h2 = document.querySelectorAll('h2');
+
+console.log(h2);
 
 //up function
 function upFunction() {
@@ -32,7 +35,7 @@ function getRandomColor() {
 }
 
 //dark mode functions
-function removeLight() {
+function removeLightClasses() {
   nav.classList.remove('navbar-light');
   navbg.classList.remove('bg-light');
   buttonToggle.classList.remove('btn-light');
@@ -69,32 +72,42 @@ function removeDark() {
 }
 
 function darkMode() {
+  removeLightClasses();
+  addDark();
   body.style.backgroundColor = '#343a40';
   body.style.color = 'white';
-  removeLight();
-  addDark();
   for (let i = 0; i < svgICONS.length; i++) {
-    svgICONS[i].style.fill = 'white';
+    svgICONS[i].style.fill = 'slategrey';
   }
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.backgroundColor = '#262b2f';
-    cards[i].style.border = '#262b2f 2px solid';
+    cards[i].style.backgroundColor = '#1e2d39';
+    cards[i].style.border = 'mignightblue 4px solid';
+    cards[i].style.color = 'cornflowerblue';
+  }
+  for (let i = 0; i < h2.length; i++) {
+    h2[i].style.color = 'slateblue';
   }
 }
 
 function lightMode() {
-  body.style.backgroundColor = 'white';
-  body.style.color = 'black';
-  addLight();
   removeDark();
+  addLight();
+  body.style.backgroundColor = 'white';
+  body.style.color = 'midnightblue';
   for (let i = 0; i < svgICONS.length; i++) {
     svgICONS[i].style.fill = 'black';
   }
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.backgroundColor = 'white';
+    cards[i].style.backgroundColor = '#000058';
     cards[i].style.border = '#262b2f 2px solid';
+    cards[i].style.color = 'white';
+  }
+  for (let i = 0; i < h2.length; i++) {
+    h2[i].style.color = 'midnightblue';
   }
 }
+
+lightMode();
 
 function buttonChecker() {
   if (buttonToggle.innerText === 'Dark Mode') {
