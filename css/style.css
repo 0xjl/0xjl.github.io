@@ -13,6 +13,10 @@ nav {
   font-size: 1.25em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn-resume {
   margin-top: 0.5em;
   font-size: 2em;
@@ -26,13 +30,16 @@ nav {
   border: 1px solid lightgreen;
 }
 
+.headline {
+  bottom: -20px;
+}
+
 footer svg {
-  margin-left: 0.25em;
   width: 25px;
 }
 
 footer svg:hover {
-  animation: pulse 0.4s backwards;
+  animation: pulse 0.5s backwards;
   cursor: pointer;
 }
 
@@ -50,7 +57,7 @@ h2 {
 
 .about-me {
   color: #1d56c0;
-  font-size: 1.2em;
+  font-size: 0.9em;
   line-height: 2.1;
   margin-top: 2em;
   font-weight: 500;
@@ -225,6 +232,9 @@ h2 {
 @media (min-width: 1024px) {
   .contact {
     width: 40%;
+  }
+  .about-me {
+    font-size: 1.2em;
   }
 }
 
