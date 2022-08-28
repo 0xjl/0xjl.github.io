@@ -16,8 +16,6 @@ const badgeLight = document.querySelector('.badge-light');
 const liveBadges = document.querySelectorAll('.badge-light');
 const h2 = document.querySelectorAll('h2');
 
-console.log(h2);
-
 //up function
 function upFunction() {
   document.body.scrollTop = 0;
