@@ -15,6 +15,9 @@ const footerText = document.querySelector('.card-footer');
 const badgeLight = document.querySelector('.badge-light');
 const liveBadges = document.querySelectorAll('.badge-light');
 const h2 = document.querySelectorAll('h2');
+const btnResume = document.getElementById('btn-resume');
+const section = document.getElementById('resume');
+const reveal = document.querySelector('.reveal');
 
 //up function
 function upFunction() {
@@ -33,7 +36,7 @@ function getRandomColor() {
 }
 
 //dark mode functions
-function removeLightClasses() {
+function removeLight() {
   nav.classList.remove('navbar-light');
   navbg.classList.remove('bg-light');
   buttonToggle.classList.remove('btn-light');
@@ -70,7 +73,7 @@ function removeDark() {
 }
 
 function darkMode() {
-  removeLightClasses();
+  removeLight();
   addDark();
   body.style.backgroundColor = '#343a40';
   body.style.color = 'white';
@@ -104,17 +107,17 @@ function lightMode() {
   }
 }
 
-lightMode();
-
 function buttonChecker() {
-  if (buttonToggle.innerText === 'Dark Mode') {
-    buttonToggle.innerText = 'Light Mode';
-    darkMode();
-  } else if (buttonToggle.innerText === 'Light Mode') {
+  if (buttonToggle.innerText === 'Light Mode') {
     buttonToggle.innerText = 'Dark Mode';
     lightMode();
+  } else if (buttonToggle.innerText === 'Dark Mode') {
+    buttonToggle.innerText = 'Light Mode';
+    darkMode();
   }
 }
+
+lightMode();
 
 //intro functions
 function fadeText() {
@@ -157,6 +160,10 @@ function formSubmit() {
 upBtn.addEventListener('click', upFunction);
 buttonToggle.addEventListener('click', buttonChecker);
 window.addEventListener('DOMContentLoaded', introEffect);
+btnResume.addEventListener('click', () => {
+  section.style.display = 'none';
+  reveal.style.display = 'block';
+});
 skills.addEventListener('mouseover', (e) => {
   if (e.target.hasAttribute('fill')) {
     e.target.setAttribute('fill', getRandomColor());

@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1250px;
   font-family: 'Roboto Serif', serif;
+  scroll-behavior: smooth;
+}
+
+.reveal {
+  display: none;
 }
 
 nav {
@@ -22,12 +26,18 @@ a {
   font-size: 2em;
   color: rgb(70, 118, 70);
   font-weight: bold;
-  border: 1px solid darkgreen;
 }
 
 .btn-resume:hover {
   color: lightgreen;
-  border: 1px solid lightgreen;
+}
+
+.btn-resume:hover::before {
+  content: '➡️';
+}
+
+.btn-resume:hover::after {
+  content: '⬅️';
 }
 
 .col-lg-6 {
@@ -41,7 +51,7 @@ a {
 }
 
 footer svg {
-  width: 25px;
+  width: 20px;
 }
 
 footer svg:hover {
@@ -83,6 +93,7 @@ h2 {
 .card {
   margin-top: 2em;
   width: 300px;
+  border-radius: 10%;
 }
 
 .card:hover {
@@ -252,8 +263,8 @@ h2 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1250px) {
   .contact {
-    width: 30%;
+    width: 35%;
   }
 }
