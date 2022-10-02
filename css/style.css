@@ -93,7 +93,7 @@ h2 {
 .card {
   margin-top: 2em;
   width: 300px;
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 .card:hover {
@@ -114,10 +114,14 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .card img {
   height: 190px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .attribution {
