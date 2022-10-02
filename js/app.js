@@ -157,7 +157,7 @@ function formSubmit() {
 upBtn.addEventListener('click', upFunction);
 buttonToggle.addEventListener('click', buttonChecker);
 window.addEventListener('DOMContentLoaded', introEffect);
-skills.addEventListener('click', (e) => {
+skills.addEventListener('mouseover', (e) => {
   if (e.target.hasAttribute('fill')) {
     e.target.setAttribute('fill', getRandomColor());
   }

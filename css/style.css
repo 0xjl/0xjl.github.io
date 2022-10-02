@@ -30,6 +30,12 @@ a {
   border: 1px solid lightgreen;
 }
 
+.col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .headline {
   bottom: -20px;
 }
@@ -58,8 +64,6 @@ h2 {
 .about-me {
   color: #1d56c0;
   font-size: 0.9em;
-  line-height: 2.1;
-  margin-top: 2em;
   font-weight: 500;
 }
 
@@ -81,6 +85,11 @@ h2 {
   width: 300px;
 }
 
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.589);
+}
+
 .footer-card {
   margin-top: auto;
 }
@@ -98,6 +107,11 @@ h2 {
 
 .card img {
   height: 190px;
+}
+
+.attribution {
+  font-size: 7px;
+  float: left;
 }
 
 .badge {
