@@ -82,7 +82,7 @@ function darkMode() {
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#1e2d39';
-    cards[i].style.border = 'mignightblue 2px solid';
+    cards[i].style.border = '3px solid #1e2d39';
     cards[i].style.color = 'cornflowerblue';
   }
   for (let i = 0; i < h2.length; i++) {
@@ -99,7 +99,8 @@ function lightMode() {
     svgICONS[i].style.fill = 'black';
   }
   for (let i = 0; i < cards.length; i++) {
-    cards[i].style.backgroundColor = '#1874CD';
+    cards[i].style.backgroundColor = '#fc7428';
+    cards[i].style.border = '2px solid #fc7428';
     cards[i].style.color = 'floralwhite';
   }
   for (let i = 0; i < h2.length; i++) {

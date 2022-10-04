@@ -1,11 +1,26 @@
+@font-face {
+  font-family: 'outfit-v6-latin-regular';
+  src: url('/css/outfit-v6-latin-regular.woff2') format('woff2'),
+    url('/css/outfit-v6-latin-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+.johan,
+.front-end {
+  color: #5b00a5 !important;
+  font-weight: 600;
+}
+
 body {
   max-width: 1250px;
-  font-family: 'Roboto Serif', serif;
+  font-family: 'outfit-v6-latin-regular', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -81,6 +96,7 @@ h2 {
 #upBtn {
   margin-left: 80%;
 }
+
 #darkmode {
   font-size: 1em;
 }
@@ -92,8 +108,10 @@ h2 {
 
 .card {
   margin-top: 2em;
-  width: 300px;
+  width: 335px;
+  height: 500px;
   border-radius: 30px;
+  border: 2px solid #fc7428;
 }
 
 .card:hover {
@@ -106,7 +124,7 @@ h2 {
 }
 
 .card-text {
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 .card-body {
@@ -119,6 +137,7 @@ h2 {
 }
 
 .card img {
+  object-fit: fill;
   height: 190px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -130,7 +149,8 @@ h2 {
 }
 
 .badge {
-  font-size: 1.2em;
+  font-size: 1em;
+  border-radius: 15px;
 }
 
 .navbar-nav {
