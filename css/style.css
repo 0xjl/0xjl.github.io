@@ -12,16 +12,22 @@
   padding: 0;
 }
 
+/* sections */
+
 .johan,
 .front-end {
-  color: #5b00a5 !important;
+  color: slateblue !important;
   font-weight: 600;
 }
 
 body {
-  max-width: 1250px;
   font-family: 'outfit-v6-latin-regular', sans-serif;
   scroll-behavior: smooth;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1256px;
 }
 
 .reveal {
@@ -117,6 +123,12 @@ h2 {
 .card:hover {
   transition: all 0.2s ease-out;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.589);
+}
+
+.card:hover #highlight {
+  font-weight: 600;
+  color: mediumspringgreen;
+  transition: all 0.1s ease-in-out;
 }
 
 .footer-card {
