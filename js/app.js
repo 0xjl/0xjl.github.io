@@ -18,7 +18,6 @@ const h2 = document.querySelectorAll('h2');
 const btnResume = document.getElementById('btn-resume');
 const section = document.getElementById('resume');
 const reveal = document.querySelector('.reveal');
-const hightlight = document.querySelector('.highlight');
 
 //onhover highlight span
 
