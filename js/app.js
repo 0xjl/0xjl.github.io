@@ -12,8 +12,8 @@ const skills = document.querySelector('.skills');
 const upBtn = document.getElementById('upBtn');
 const projects = document.querySelector('.projects');
 const footerText = document.querySelector('.card-footer');
-const badgeLight = document.querySelector('.badge-light');
-const liveBadges = document.querySelectorAll('.badge-light');
+const badgeLight = document.querySelector('.badge-success');
+const liveBadges = document.querySelectorAll('.badge-success');
 const h2 = document.querySelectorAll('h2');
 const btnResume = document.getElementById('btn-resume');
 const section = document.getElementById('resume');
@@ -43,7 +43,7 @@ function removeLight() {
   navbg.classList.remove('bg-light');
   buttonToggle.classList.remove('btn-light');
   for (let i = 0; i < liveBadges.length; i++) {
-    liveBadges[i].classList.remove('badge-light');
+    liveBadges[i].classList.remove('badge-success');
   }
 }
 
@@ -52,7 +52,7 @@ function addDark() {
   navbg.classList.add('bg-dark');
   buttonToggle.classList.add('btn-dark');
   for (let i = 0; i < liveBadges.length; i++) {
-    liveBadges[i].classList.add('badge-dark');
+    liveBadges[i].classList.add('badge-info');
   }
 }
 
@@ -61,7 +61,7 @@ function addLight() {
   navbg.classList.add('bg-light');
   buttonToggle.classList.add('btn-light');
   for (let i = 0; i < liveBadges.length; i++) {
-    liveBadges[i].classList.add('badge-light');
+    liveBadges[i].classList.add('badge-success');
   }
 }
 
@@ -70,7 +70,7 @@ function removeDark() {
   navbg.classList.remove('bg-dark');
   buttonToggle.classList.remove('btn-dark');
   for (let i = 0; i < liveBadges.length; i++) {
-    liveBadges[i].classList.remove('badge-dark');
+    liveBadges[i].classList.remove('badge-info');
   }
 }
 
@@ -95,7 +95,7 @@ function darkMode() {
 function lightMode() {
   removeDark();
   addLight();
-  body.style.backgroundColor = 'white';
+  body.style.backgroundColor = '#f9f9fb';
   body.style.color = 'midnightblue';
   for (let i = 0; i < svgICONS.length; i++) {
     svgICONS[i].style.fill = 'black';
@@ -120,7 +120,7 @@ function buttonChecker() {
   }
 }
 
-lightMode();
+darkMode();
 
 //intro functions
 function fadeText() {
