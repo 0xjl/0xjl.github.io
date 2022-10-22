@@ -112,10 +112,6 @@ h2 {
   margin-top: 1em;
 }
 
-.badge {
-  box-shadow: 2px 5px #555555;
-}
-
 .card {
   margin-top: 2em;
   width: 335px;
@@ -165,8 +161,17 @@ h2 {
 }
 
 .badge {
+  position: relative;
+  top: 0;
+  transition: all ease-out 0.2s;
   font-size: 1em;
   border-radius: 15px;
+  box-shadow: 2px 5px #555555;
+}
+
+.badge:hover {
+  box-shadow: none;
+  top: 3px;
 }
 
 .navbar-nav {
