@@ -51,14 +51,17 @@ a {
 
 .btn-resume:hover {
   color: lightgreen;
+  transition: all 0.3s ease-out;
 }
 
 .btn-resume:hover::before {
   content: '➡️';
+  transition: all 0.3s ease-out;
 }
 
 .btn-resume:hover::after {
   content: '⬅️';
+  transition: all 0.3s ease-out;
 }
 
 .col-lg-6 {
@@ -122,7 +125,7 @@ h2 {
 
 .card:hover {
   transition: all 0.2s ease-out;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.589);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.589);
 }
 
 .card:hover #highlight {
@@ -300,14 +303,6 @@ textarea:hover {
   width: 80%;
   border: 3px solid darkslategrey;
   border-radius: 5px;
-}
-
-.skills {
-  height: 50vh;
-}
-
-.skills svg {
-  margin-top: 10px;
 }
 
 /* ANIMATIONS */
