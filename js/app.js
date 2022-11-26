@@ -7,7 +7,7 @@ const body = document.querySelector('.all');
 const cards = document.querySelectorAll('.card');
 const nav = document.querySelector('.navbar-light');
 const navbg = document.querySelector('.bg-light');
-const svgICONS = document.querySelectorAll('.svg-icon');
+const svgICONS = document.querySelectorAll('.icon');
 const skills = document.querySelector('.skills');
 const upBtn = document.getElementById('upBtn');
 const projects = document.querySelector('.projects');
@@ -18,8 +18,6 @@ const h2 = document.querySelectorAll('h2');
 const btnResume = document.getElementById('btn-resume');
 const section = document.getElementById('resume');
 const reveal = document.querySelector('.reveal');
-
-//onhover highlight span
 
 //up function
 function upFunction() {
@@ -80,7 +78,8 @@ function darkMode() {
   body.style.backgroundColor = '#343a40';
   body.style.color = 'white';
   for (let i = 0; i < svgICONS.length; i++) {
-    svgICONS[i].style.fill = 'slategrey';
+    svgICONS[i].style.fill = 'white';
+    svgICONS[i].style.color = 'white';
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#1e2d39';
@@ -99,6 +98,7 @@ function lightMode() {
   body.style.color = 'midnightblue';
   for (let i = 0; i < svgICONS.length; i++) {
     svgICONS[i].style.fill = 'black';
+    svgICONS[i].style.color = 'black';
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#fc7428';
@@ -168,7 +168,5 @@ btnResume.addEventListener('click', () => {
   reveal.style.display = 'block';
 });
 skills.addEventListener('mouseover', (e) => {
-  if (e.target.hasAttribute('fill')) {
-    e.target.setAttribute('fill', getRandomColor());
-  }
+  e.target.setAttribute('fill', getRandomColor());
 });

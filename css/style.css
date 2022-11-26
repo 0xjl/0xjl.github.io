@@ -16,7 +16,7 @@
 
 .johan,
 .front-end {
-  color: slateblue !important;
+  color: rgb(91, 42, 182) !important;
   font-weight: 600;
 }
 
@@ -114,8 +114,8 @@ h2 {
 
 .card {
   margin-top: 2em;
-  width: 335px;
-  height: 500px;
+  width: 350px;
+  height: 520px;
   border-radius: 30px;
   border: 2px solid #fc7428;
 }
