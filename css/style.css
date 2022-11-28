@@ -92,6 +92,11 @@ h2 {
   color: midnightblue;
 }
 
+.about img {
+  width: 280px;
+  border-radius: 50%;
+}
+
 .about-me {
   color: #1d56c0;
   font-size: 0.9em;
@@ -347,6 +352,11 @@ textarea:hover {
   }
   .about-me {
     font-size: 1.2em;
+  }
+  .about p,
+  .resume p {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
