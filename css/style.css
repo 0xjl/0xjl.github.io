@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+p {
+  font-size: 1.05em;
+}
+
 /* sections */
 
 .johan,
@@ -120,7 +124,7 @@ h2 {
 .card {
   margin-top: 2em;
   width: 350px;
-  height: 520px;
+  height: 550px;
   border-radius: 30px;
   border: 2px solid #fc7428;
 }
@@ -347,6 +351,9 @@ textarea:hover {
 }
 
 @media (min-width: 1024px) {
+  p {
+    font-size: 1.1em;
+  }
   .contact {
     width: 40%;
   }
