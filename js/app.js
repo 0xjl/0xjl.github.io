@@ -7,7 +7,7 @@ const body = document.querySelector('.all');
 const cards = document.querySelectorAll('.card');
 const nav = document.querySelector('.navbar-light');
 const navbg = document.querySelector('.bg-light');
-const svgICONS = document.querySelectorAll('.icon');
+const ICons = document.querySelectorAll('.icon');
 const skills = document.querySelector('.skills');
 const upBtn = document.getElementById('upBtn');
 const projects = document.querySelector('.projects');
@@ -77,9 +77,8 @@ function darkMode() {
   addDark();
   body.style.backgroundColor = '#343a40';
   body.style.color = 'white';
-  for (let i = 0; i < svgICONS.length; i++) {
-    svgICONS[i].style.fill = 'white';
-    svgICONS[i].style.color = 'white';
+  for (let i = 0; i < ICons.length; i++) {
+    ICons[i].style.color = 'white';
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#1e2d39';
@@ -96,9 +95,8 @@ function lightMode() {
   addLight();
   body.style.backgroundColor = '#f9f9fb';
   body.style.color = 'midnightblue';
-  for (let i = 0; i < svgICONS.length; i++) {
-    svgICONS[i].style.fill = 'black';
-    svgICONS[i].style.color = 'black';
+  for (let i = 0; i < ICons.length; i++) {
+    ICons[i].style.color = 'black';
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#fc7428';
