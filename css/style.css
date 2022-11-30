@@ -258,18 +258,16 @@ h2 {
   text-align: left;
 }
 
-.form-group input,
-.form-group textarea {
-  background-color: rgb(180, 180, 180);
-  border: 4px solid rgb(82, 82, 82);
+form-control {
+  border: none;
 }
 
 input[type='text'],
-[type='email'],
+input[type='email'],
 textarea {
   padding: 10px;
   color: black;
-  border: 4px solid rgb(82, 82, 82);
+  border: 4px solid #1e2d39;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -277,7 +275,7 @@ textarea {
 [type='text']:hover,
 [type='email']:hover,
 textarea:hover {
-  border: 4px solid rgb(145, 150, 177);
+  border: 4px solid #4979a1;
   transition: all 0.15s ease-in-out;
 }
 
@@ -308,8 +306,8 @@ textarea:hover {
 
 .contact {
   width: 80%;
-  border: 4px solid rgb(33, 33, 33);
-  border-radius: 1em;
+  border: 4px solid black;
+  border-radius: 15px;
 }
 
 /* ANIMATIONS */

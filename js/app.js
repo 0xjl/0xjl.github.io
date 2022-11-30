@@ -19,6 +19,12 @@ const btnResume = document.getElementById('btn-resume');
 const section = document.getElementById('resume');
 const reveal = document.querySelector('.reveal');
 
+//form
+const formGroup = document.querySelectorAll('.form-group input');
+const formText = document.querySelector('.form-group textarea');
+const input = document.querySelector('.form-control');
+const contact = document.querySelector('.contact');
+
 //up function
 function upFunction() {
   document.body.scrollTop = 0;
@@ -82,12 +88,19 @@ function darkMode() {
   }
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundColor = '#1e2d39';
-    cards[i].style.border = '3px solid #1e2d39';
+    cards[i].style.border = '2px solid #1e2d39';
     cards[i].style.color = 'cornflowerblue';
   }
   for (let i = 0; i < h2.length; i++) {
     h2[i].style.color = 'slateblue';
   }
+  for (let i = 0; i < formGroup.length; i++) {
+    formGroup[i].style.backgroundColor = '#6494edde';
+    formGroup[i].style.border = '3px solid #6494edde';
+  }
+  formText.style.border = 'none';
+  formText.style.backgroundColor = '#6494edde';
+  contact.style.backgroundColor = '#1e2d39';
 }
 
 function lightMode() {
@@ -106,6 +119,13 @@ function lightMode() {
   for (let i = 0; i < h2.length; i++) {
     h2[i].style.color = 'midnightblue';
   }
+  for (let i = 0; i < formGroup.length; i++) {
+    formGroup[i].style.backgroundColor = '#fe975b';
+    formGroup[i].style.border = '3px solid #fffaf0c8';
+  }
+  formText.style.border = '3px solid #fffaf0c8';
+  formText.style.backgroundColor = '#fe975b';
+  contact.style.backgroundColor = '#fc7428';
 }
 
 function buttonChecker() {
