@@ -14,7 +14,7 @@
 }
 
 p {
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 /* sections */
@@ -32,7 +32,7 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 1256px;
+  max-width: 1200px;
 }
 
 .reveal {
@@ -125,9 +125,13 @@ h2 {
 .card {
   margin-top: 2em;
   width: 350px;
-  height: 550px;
+  height: 575px;
   border-radius: 30px;
   border: 2px solid #fc7428;
+}
+
+.card p {
+  font-size: .95em;
 }
 
 .card:hover {
@@ -163,11 +167,6 @@ h2 {
   height: 190px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-}
-
-.attribution {
-  font-size: 7px;
-  float: left;
 }
 
 .badge {
@@ -343,23 +342,30 @@ textarea:hover {
   .contact {
     width: 80%;
   }
+  .card {
+  height: 530px;
+  }
+.card p {
+  font-size: 1em;
+}
 }
 
 @media (min-width: 1024px) {
   p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .contact {
     width: 40%;
   }
   .about-me {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .about p,
   .resume p {
     width: 60%;
     margin: 0 auto;
   }
+ 
 }
 
 @media (min-width: 1250px) {
