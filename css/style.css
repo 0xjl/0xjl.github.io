@@ -100,8 +100,8 @@ h2 {
 .about img {
   width: 280px;
   border-radius: 50%;
-  -webkit-filter: blur(1.1px);
-  filter: blur(1.1px);
+  -webkit-filter: blur(1.35px);
+  filter: blur(1.35px);
 }
 
 .about-me {
