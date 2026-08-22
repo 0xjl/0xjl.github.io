@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan Lourens — Front-End / Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Johan Lourens — front-end and full-stack developer. React, TypeScript, Node.js projects and a completed Treehouse Front End Techdegree.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0f1a'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3EJL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">JL<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#techdegree">Techdegree</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <span class="hero-blob hero-blob-a" aria-hidden="true"></span>
+    <span class="hero-blob hero-blob-b" aria-hidden="true"></span>
+    <p class="eyebrow reveal">Hey, I'm</p>
+    <h1 class="hero-title reveal">Johan Lourens</h1>
+    <p class="hero-role reveal" id="heroRole">Front-End &amp; Full-Stack Developer</p>
+    <p class="hero-sub reveal">
+      I build web apps and small tools with React, TypeScript and Node.js to
+      sharpen my skills — from practice dashboards to small, playful side
+      projects. Treehouse Front End Techdegree graduate, learning by building.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="https://github.com/0xjl" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </section>
+
+  <section class="stats reveal" aria-label="Quick stats">
+    <div class="stat">
+      <span class="stat-num" data-count="16">0</span>
+      <span class="stat-label">Projects built</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="7">0</span>
+      <span class="stat-label">Independent projects</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="9">0</span>
+      <span class="stat-label">Techdegree modules</span>
+    </div>
+    <div class="stat">
+      <span class="stat-badge">🎓 Treehouse Grad</span>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <span class="section-kicker">01 — About</span>
+      <h2>A bit about how I work</h2>
+    </div>
+    <div class="about-grid reveal">
+      <p class="about-text">
+        I started with the Treehouse Front End Web Development Techdegree —
+        nine modules that took me from raw HTML/CSS through JavaScript and
+        into full front-end applications. Since finishing, I've been building
+        independent practice projects that go further: full-stack dashboards,
+        API-driven apps, and small experiments — all self-directed and built
+        purely for learning, not for profit.
+      </p>
+      <p class="about-text">
+        I like practice projects modeled on real-world use cases — whether
+        that's a mock ticketing system patterned after internal support
+        tools, a dashboard that tracks live SpaceX launches, or a
+        one-question weather app that just tells you if it's raining.
+        Currently focused on React, TypeScript, and Node/Express.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="section-kicker">02 — Independent Projects</span>
+      <h2>Things I've built on my own</h2>
+      <p class="section-desc">Self-directed practice projects — full-stack apps, dashboards, and tools built end to end, from API to UI, purely for learning.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="card reveal" data-lang="typescript">
+        <div class="card-top">
+          <span class="card-emoji">🎬</span>
+          <span class="lang-badge lang-ts">TypeScript</span>
+        </div>
+        <h3>Netflix Clone</h3>
+        <p>A modern rebuild of the classic Netflix-clone tutorial — Vite, React 19 and TypeScript, styled with Tailwind CSS v4, and wired to The Movie Database (TMDB) API via TanStack Query and Axios for fast, cached data fetching.</p>
+        <ul class="tags">
+          <li>React 19</li><li>Vite</li><li>Tailwind CSS</li><li>TanStack Query</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/react-netflix-clonski-app" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/react-netflix-clonski-app/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="css">
+        <div class="card-top">
+          <span class="card-emoji">🧪</span>
+          <span class="lang-badge lang-css">React / CSS</span>
+        </div>
+        <h3>Breaking Bad Character Browser</h3>
+        <p>A character browser for Breaking Bad and Better Call Saul. When the public API it relied on went offline, I bundled a local dataset of 62 characters and rebuilt search to run entirely client-side instead.</p>
+        <ul class="tags">
+          <li>React</li><li>REST API</li><li>Client-side Search</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/Breaking-Bad-React-App" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/Breaking-Bad-React-App/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="javascript">
+        <div class="card-top">
+          <span class="card-emoji">🎫</span>
+          <span class="lang-badge lang-js">JavaScript</span>
+        </div>
+        <h3>Helpdesk Ticketing System</h3>
+        <p>A practice ticketing system modeled on internal customer-support tools — a Node/Express API and React front end for creating, tracking, and resolving support tickets. Built to learn the pattern.</p>
+        <ul class="tags">
+          <li>Node.js</li><li>Express</li><li>React</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/helpdesk-ticketing-system" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/helpdesk-ticketing-system/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="javascript">
+        <div class="card-top">
+          <span class="card-emoji">🚀</span>
+          <span class="lang-badge lang-js">JavaScript</span>
+        </div>
+        <h3>SpaceX Mission Dashboard</h3>
+        <p>A full-stack dashboard for browsing SpaceX launch missions, with an Express API layer, a React client, and fallback data baked in so it stays useful even if the upstream source goes down.</p>
+        <ul class="tags">
+          <li>Node.js</li><li>Express</li><li>React</li><li>Axios</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/SpaceX_Mission_DashBoard" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/SpaceX_Mission_DashBoard/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="javascript">
+        <div class="card-top">
+          <span class="card-emoji">🗓️</span>
+          <span class="lang-badge lang-js">JavaScript</span>
+        </div>
+        <h3>Dayflow</h3>
+        <p>A personal day-planning dashboard built with React, Vite, and Tailwind CSS — focused on clean component scaffolding and a modular, easy-to-extend structure.</p>
+        <ul class="tags">
+          <li>React</li><li>Vite</li><li>Tailwind CSS</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/appdashboardv1" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/appdashboardv1/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="css">
+        <div class="card-top">
+          <span class="card-emoji">☔</span>
+          <span class="lang-badge lang-css">Vanilla JS</span>
+        </div>
+        <h3>Umuulan ba?</h3>
+        <p>Tagalog for "is it raining?" — a small, playful weather app that checks live conditions for Manila and answers with a bit of local personality (and an emoji or two).</p>
+        <ul class="tags">
+          <li>Vite</li><li>Weather API</li><li>Vanilla JS</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/umuulan-ba" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/umuulan-ba/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-lang="html">
+        <div class="card-top">
+          <span class="card-emoji">📄</span>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <h3>Landing Page</h3>
+        <p>A clean, responsive marketing landing page built on solid HTML &amp; CSS fundamentals.</p>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li>
+        </ul>
+        <div class="card-actions">
+          <a href="https://github.com/0xjl/landingpagejohan" target="_blank" rel="noopener">View Code ↗</a>
+          <a href="https://0xjl.github.io/landingpagejohan/" target="_blank" rel="noopener" class="card-live">Live Demo ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="techdegree">
+    <div class="section-head reveal">
+      <span class="section-kicker">03 — Coursework</span>
+      <h2>Treehouse Front End Techdegree</h2>
+      <p class="section-desc">Nine projects, start to finish — the path from HTML basics to a complete front-end application.</p>
+    </div>
+
+    <ol class="path reveal">
+
+      <li class="path-node" data-lang="html">
+        <span class="path-index">01</span>
+        <div class="path-body">
+          <h3>Project 1 · Foundations</h3>
+          <p>My first techdegree project — the very start of the course.</p>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-1" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-1/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="html">
+        <span class="path-index">02</span>
+        <div class="path-body">
+          <h3>Project 2 · Building Blocks</h3>
+          <p>Building on core HTML &amp; CSS structure and layout skills.</p>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-2" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-2/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="html">
+        <span class="path-index">03</span>
+        <div class="path-body">
+          <h3>Project 3</h3>
+          <p>Continuing the Front End Techdegree program.</p>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-3" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-3/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="scss">
+        <span class="path-index">04</span>
+        <div class="path-body">
+          <h3>Project 4 · Styling Up</h3>
+          <p>Stepping up the styling with SCSS.</p>
+          <span class="lang-badge lang-scss">SCSS</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-4" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-4/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="html">
+        <span class="path-index">05</span>
+        <div class="path-body">
+          <h3>Project 5</h3>
+          <p>Midpoint of the techdegree curriculum.</p>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-5" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-5/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="css">
+        <span class="path-index">06</span>
+        <div class="path-body">
+          <h3>Project 6</h3>
+          <p>Deeper into CSS layout and design patterns.</p>
+          <span class="lang-badge lang-css">CSS</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-6" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-6/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="html">
+        <span class="path-index">07</span>
+        <div class="path-body">
+          <h3>Project 7</h3>
+          <p>Approaching the final stretch of the course.</p>
+          <span class="lang-badge lang-html">HTML</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-7" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-7/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="javascript">
+        <span class="path-index">08</span>
+        <div class="path-body">
+          <h3>Project 8 · Going Dynamic</h3>
+          <p>Bringing it to life with JavaScript.</p>
+          <span class="lang-badge lang-js">JavaScript</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-8" target="_blank" rel="noopener">Code</a>
+          <a class="path-link path-link-live" href="https://0xjl.github.io/Techdegree-project-8/" target="_blank" rel="noopener">Live</a>
+        </div>
+      </li>
+
+      <li class="path-node" data-lang="javascript">
+        <span class="path-index">09</span>
+        <div class="path-body">
+          <h3>Project 9 · Capstone</h3>
+          <p>The capstone project — pulling everything together to close out the techdegree.</p>
+          <span class="lang-badge lang-js">JavaScript</span>
+        </div>
+        <div class="path-links">
+          <a class="path-link" href="https://github.com/0xjl/Techdegree-project-9" target="_blank" rel="noopener">Code</a>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="section-kicker">04 — Skills</span>
+      <h2>Tools &amp; technologies</h2>
+    </div>
+    <ul class="skill-grid reveal">
+      <li>React</li>
+      <li>TypeScript</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>Vite</li>
+      <li>Tailwind CSS</li>
+      <li>SCSS / CSS</li>
+      <li>HTML5</li>
+      <li>REST APIs</li>
+      <li>TanStack Query</li>
+      <li>Git &amp; GitHub</li>
+    </ul>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="contact-card reveal">
+      <h2>Let's build something.</h2>
+      <p>Open to front-end and full-stack opportunities — feel free to reach out.</p>
+      <div class="contact-actions">
+        <a href="mailto:jdl.lourensph@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://github.com/0xjl" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Johan Lourens. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
