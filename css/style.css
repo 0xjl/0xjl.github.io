@@ -295,6 +295,27 @@ body::after {
   font-weight: 600;
   font-size: 0.95rem;
 }
+.stat-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  gap: 6px;
+}
+.stat-link:hover {
+  border-color: rgba(34,211,238,0.35);
+}
+.stat-link-hint {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.stat-link:hover .stat-link-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Section shared */
 .section {
