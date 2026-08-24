@@ -299,20 +299,44 @@ body::after {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  gap: 6px;
 }
 .stat-link:hover {
   border-color: rgba(34,211,238,0.35);
 }
-.stat-link-hint {
-  font-size: 0.78rem;
+.stat-swap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 1.4em;
+}
+.stat-swap .stat-badge,
+.stat-swap .stat-link-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.stat-swap .stat-badge {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stat-swap .stat-link-hint {
+  font-size: 0.95rem;
   color: var(--accent);
   font-weight: 600;
   opacity: 0;
-  transform: translateY(-2px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(6px);
 }
-.stat-link:hover .stat-link-hint {
+.stat-link:hover .stat-swap .stat-badge {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+.stat-link:hover .stat-swap .stat-link-hint {
   opacity: 1;
   transform: translateY(0);
 }
