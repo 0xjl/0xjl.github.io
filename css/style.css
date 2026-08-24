@@ -268,6 +268,10 @@ body::after {
   border-radius: var(--radius);
   padding: 26px 18px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 .stat:hover {
