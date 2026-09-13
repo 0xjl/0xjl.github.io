@@ -107,6 +107,36 @@ if (scrollProgress) {
   });
 }
 
+// Live demo phone: scale to fit, status bar clock, restart
+const phoneStage = document.getElementById('phoneStage');
+if (phoneStage) {
+  const PHONE_W = 414;
+  const PHONE_H = 868;
+
+  function fitPhone() {
+    const available = phoneStage.parentElement.clientWidth;
+    const byWidth = available / PHONE_W;
+    const byHeight = (window.innerHeight - 120) / PHONE_H;
+    const scale = Math.max(0.55, Math.min(1, byWidth, byHeight));
+    phoneStage.style.setProperty('--phone-scale', scale.toFixed(3));
+  }
+  fitPhone();
+  window.addEventListener('resize', fitPhone);
+
+  const phoneTime = document.getElementById('phoneTime');
+  function updatePhoneTime() {
+    const now = new Date();
+    phoneTime.textContent = `${now.getHours() % 12 || 12}:${String(now.getMinutes()).padStart(2, '0')}`;
+  }
+  updatePhoneTime();
+  setInterval(updatePhoneTime, 15000);
+
+  const demoFrame = document.getElementById('demoFrame');
+  document.getElementById('demoRestart').addEventListener('click', () => {
+    demoFrame.src = demoFrame.src;
+  });
+}
+
 // Scrollspy: highlight active nav link
 const spySections = document.querySelectorAll('main section[id]');
 const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
